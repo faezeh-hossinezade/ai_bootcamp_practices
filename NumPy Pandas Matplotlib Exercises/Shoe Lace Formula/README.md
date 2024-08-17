@@ -1,5 +1,4 @@
 # Shoe Lace Formula for Polygon Area
-## Purpose:
 Calculates the area of a simple polygon given the Cartesian coordinates of its vertices.
 
 ## Method:

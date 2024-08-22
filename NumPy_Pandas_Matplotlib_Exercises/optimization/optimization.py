@@ -1,5 +1,7 @@
 import numpy as np
 
+import numpy as np
+
 def simplex(A, b, C):
     m, n = np.array(A).shape
     
@@ -24,7 +26,7 @@ def simplex(A, b, C):
         ratios = np.divide(X[Basis], d)
         ratios[d <= 0] = np.inf
         leaving_var_idx = np.argmin(ratios)
-        leaving_var = Basis[leaving_var_idx]
+        # leaving_var = Basis[leaving_var_idx]
         Basis[leaving_var_idx] = entering_var
         B = A[:, Basis]
         CB = C[Basis]
